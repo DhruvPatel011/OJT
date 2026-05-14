@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: navy;
+}
+.f {
+    width: 100%;
+    height: 70px;
+    background: linear-gradient(90deg, #0f172a, #1e3a8a);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    font-family: Arial, sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.f div {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 22px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+.f div:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.ab {
+    background: #ef4444;
+}
+
+.st {
+    background: #22c55e; 
+}
+
+.re {
+    background: #f59e0b;
+}
+
+.fix {
+    background: #3b82f6; 
+}
+
+
+.f div:active {
+    transform: scale(0.95);
+}
+.division1{
+    width: 10%;
+    background-color: aqua;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    float: left;
+    border-radius: 10px;
+    font-style: normal;
+    text-shadow: none;
+}
+.division2{
+    width: 10%;
+    background-color: rgb(255, 0, 255);
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    float: right;
+    border-radius: 10px;
+    font-style: normal;
+    text-shadow: none;
+}
+
+.division1:hover {
+    background-color: rgb(0, 247, 255);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.division2:hover {
+    background-color: rgb(255, 0, 200);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.divs{
+    width: 100%;
+    height: 70px;
+    border-bottom: 2px solid #0f172a;
+    padding: 20px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-weight: 400;
+    font-family: poppins, sans-serif;
+    background-color: #ffffff;
+    text-shadow: 0 0 5px #000000;
+}
+
+@media screen and (max-width: 600px){
+    .f{
+        flex-direction: column;
+        gap: 15px;
+        margin: auto;
+        height: auto;
+        padding: 20px;
+    }
+
+    .f div{
+        width: 90%;      
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .divs{
+        height: 80px;
+    }
+
+    .divs div{  
+        width: auto;
+        height: auto;
+        padding: 10px;
+    }
+}
+
+.box11{
+    width: 80px;
+    height: 80px;
+    position: relative;
+    background-color: rgb(63, 252, 252);
+    border-radius:10px;
+    margin: 20px;
+    box-shadow: 0 0 20px rgb(0, 204, 255);
+    animation: move 2s infinite alternate ease-in-out;
+    background-image: url();
+}
+
+@keyframes move{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(330px);
+    }
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr;
+    grid-template-rows: 80px 120px 120px 80px;
+    gap: 5px;
+    height: 100vh;
+}
+
+.box{
+    background: rgb(192, 192, 192);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.header{
+    grid-column: 1 / 4;
+}
+
+.sidebar{
+    grid-row: 2 / 4;
+    grid-column: 1 / 2;
+}
+
+.content1{
+    grid-column: 2 / 4;
+}
+
+.content2{
+    grid-column: 2 / 3;
+}
+
+.content3{
+    grid-column: 3 / 4;
+}
+
+.footer{
+    grid-column: 1 / 4;
+}
+
+@media (max-width: 768px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 100px);
+    }
+
+    .header,
+    .sidebar,
+    .content1,
+    .content2,
+    .content3,
+    .footer{
+        grid-column: auto;
+        grid-row: auto;
+    }
+}
+
