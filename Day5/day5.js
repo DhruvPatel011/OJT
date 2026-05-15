@@ -85,3 +85,16 @@ document.write("<br>");
     }
 document.write("<br><br>");
 
+//PR-8: Find Fibonaci Seties
+let nmb = 10;
+let a = 0,
+b = 1,
+c;
+document.write("<h3>8. Fibonacci Series</h3>");
+document.write(a + " " + b + " ");
+    for (let i = 3; i <= nmb; i++) {
+        c = a + b;
+        document.write(c + " ");
+        a = b;
+        b = c;
+    }
