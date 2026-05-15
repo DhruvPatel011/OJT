@@ -52,3 +52,17 @@ document.write("<br>");
 document.write("Reverse Number = " + rev);
 document.write("<br><br>");
 
+//PR-6: Sum of Digits
+let num1 = 1234;
+let sum = 0;
+let temp1 = num1;
+        while (temp1 > 0) {
+            let digit = temp1 % 10;
+            sum = sum + digit;
+            temp1 = parseInt(temp1 / 10);
+        }
+document.write("<h3>6. Sum of Digits</h3>");
+document.write("Number = " + num1 + "<br>");
+document.write("Sum of Digits = " + sum);
+document.write("<br><br>");
+
