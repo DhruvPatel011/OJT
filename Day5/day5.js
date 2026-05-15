@@ -98,3 +98,22 @@ document.write(a + " " + b + " ");
         a = b;
         b = c;
     }
+document.write("<br><br>");
+
+//PR-9: Countdown Timer
+let time = 10;
+let interval;
+document.write("<h3>9. Countdown Timer</h3>");
+function startTimer() {
+    clearInterval(interval); // reset if clicked again
+    time = 10;
+    document.getElementById("timer").innerHTML = time;
+    interval = setInterval(() => {        time--;
+    document.getElementById("timer").innerHTML = time;
+        if (time === 0) {
+            clearInterval(interval);
+            document.getElementById("timer").innerHTML = "Time Up!";
+        }
+    }, 1000);
+}
+
