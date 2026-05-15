@@ -137,5 +137,35 @@ document.write(car2);
 document.write("<br>");
 var data = car2.concat(car3);
 document.write(data);
+document.write("<br><br>");
+
+
+//PR-11: Use of Promp & Alert
+document.write("<h3>11. Prompt Name // Remove comment for run</h3>");
+//var name = prompt("Enter Your name: ");
+//alert("Login Successfully");
+document.write("<br>");
+
+
+//PR-12:Function Return Value
+document.write("<h3>12. Function (Return Valude)</h3>");
+function foo(p1){
+    if (typeof(p1) == "number")
+    return 0;
+    else if(typeof(p1) == "string"){
+        return "zero";
+    }
+}
+document.write("Input: 1 || Output:"+foo(1));
+document.write("<br>");
+document.write("Input: abc || Output:"+foo("abc"));
+document.write("<br>");
+document.write("Input:  || Output:"+foo());
+document.write("<br><br>");
+
+
+//Pr-13: 
+document.write("<h3>13. </h3>");
+
 
 
