@@ -38,3 +38,17 @@ for (let i = 1; i <= 10; i++) {
 document.write("<br>");
 
 
+//PR-5: Reverse Number
+let nb = 1234;
+let rev = 0;
+while ( nb > 0 ){
+    let dgt = nb % 10;
+    rev = rev * 10 + dgt;
+    nb= parseInt(nb/10);
+}
+document.write("<h4>5. Reverse Number</h4>");
+document.write("Original Nummber = "+nb);
+document.write("<br>");
+document.write("Reverse Number = " + rev);
+document.write("<br><br>");
+
