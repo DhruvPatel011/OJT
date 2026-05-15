@@ -29,4 +29,12 @@ document.write("Factorial of " + n + " = " + fact);
 document.write("<br><br>");
 
 
+// PR-4: Multiplication Table
+let tb = 4;
+document.write("<h4>4. Multiplication Table of " + tb + "</h4>");
+for (let i = 1; i <= 10; i++) {
+    document.write(tb + " x " + i + " = " + (tb * i) + "<br>");
+}
+document.write("<br>");
+
 
