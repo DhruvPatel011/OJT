@@ -48,8 +48,25 @@ var person1 = {firstName: "Dhruv", lastName: "Patel",
 person1.sayHi();
 document.write("<br><br>");
 
-//PR-7: 
-document.write("<h3>7. </h3>");
+//PR-7: Dom Properties
+document.write("<h3>7. Using GetElementById/Name</h3>");
+function mf(){
+    var txt = document.getElementById("mt");
+    alert(txt.value);
+}
+
+//PR-8: Form Using DOM
+function f(){
+    var aa = document.forms["myf"];
+    var uu = aa.un.value;
+    var pp = aa.pwd.value;
+    if(uu == "admin" && pp == "123"){
+        alert("Valid");
+    } else {
+         alert("Invalid");
+    }
+}
+
 
 
 
