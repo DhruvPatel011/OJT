@@ -24,12 +24,57 @@
     <label><h3>9. Form Validation</h3></label>
     <input type="text" id="mytext" placeholder="Enter Email">
     <button type="button" onclick="checkMail()">Click</button>
+    <br><br>
+    <hr>
+    <form name="RegForm" method="post" id="RegForm"  onsubmit="return validate()" >
+  <table>
+    <tr>
+        <td colspan="2"><h1 style="text-align: center;">REGISTRATION FORM</h1></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Name :</td>
+        <td><input type="text" size="40" name="Name" /> <br /></td>
+    </tr>
+    <tr>
+        <td>E-mail Address:</td>
+        <td><input type="text" size="40" name="EMail" /><br></td>
+    </tr>
+    <tr>
+        <td>Password:</td>
+        <td><input type="text" size="40" name="Password" /><br></td>
+    </tr>
+    <tr>
+        <td>Mobile:</td>
+        <td><input type="text" size="40" name="Telephone" /> <br></td>
+    </tr>
+    <tr>
+        <td>Select Your Course : </td>
+        <td><select type="text"name="Subject">
+            <option>B.Tech</option>
+            <option>M.Tech</option>
+            <option>BCA</option>
+            <option>MCA</option>
+        </select> <br></td>
+    </tr> <br/> <br/>
+    <tr>
+        <td>Comments:</td>
+        <td><textarea cols="40" name="Comment"> </textarea> <br></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><input type="submit" value="Submit" name="Submit" /> &nbsp;<input type="reset" value="Reset" name="Reset" /> <br></td>
+    </tr>
+  </table>
+</form>
     <br>
-
+    <hr>
+    <br>
 
     <script src="day6.js"></script>
     <input type="text" id="mt" placeholder="Enter Anything">
     <button onclick="mf()">Click</button>
+    <br><br>
     <hr>
     <br>
     <div class="heading">Thank Yoou !</div>
