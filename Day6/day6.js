@@ -55,18 +55,31 @@ function mf(){
     alert(txt.value);
 }
 
-//PR-8: Form Using DOM
-function f(){
+// PR-8: Form Using DOM
+function f() {
     var aa = document.forms["myf"];
     var uu = aa.un.value;
     var pp = aa.pwd.value;
-    if(uu == "admin" && pp == "123"){
+
+    if (uu == "admin" && pp == "123") {
         alert("Valid");
     } else {
-         alert("Invalid");
+        alert("Invalid");
     }
 }
 
+// PR-9: Email Validation
+function checkMail() {
+    var a1 = document.getElementById("mytext").value;
+    var pattern = "^[\\w-_.]*[\\w-_.]\\@[\\w]\\.+[\\w]+[\\w]$";
+    var regex = new RegExp(pattern);
+
+    if (regex.test(a1)) {
+        alert("Valid");
+    } else {
+        alert("Invalid");
+    }
+}
 
 
 
