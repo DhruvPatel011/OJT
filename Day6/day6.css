@@ -43,10 +43,8 @@ input{
     border-radius: 20px;
     font-size: 15px;
     background: rgb(255, 255, 255);
-    color: white;
     font-weight: 400;
-    border: 1px solid rgb(0, 140, 255);
-    box-shadow: 0 0 8px rgb(0, 140, 255);
+    border: 1px solid rgb(0, 0, 0);
     width: 150px;
 }
 button{
@@ -56,5 +54,4 @@ button{
     background-color: white;
     border-radius: 20px;
     padding: 8px;
-    box-shadow: 0 0 8pc black;
 }
