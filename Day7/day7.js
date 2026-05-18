@@ -59,3 +59,8 @@ setInterval(callmee,2000);
 te = setInterval(callmee, 3000);
 clearInterval(te);
 
+//PR-5: JSON Arry & Object
+var myjson = '{"name":"Dhruv","age":"20","cars":["Ford","Bmw","Fiat"]}';
+var myobj = JSON.parse(myjson);
+document.getElementById("d").innerHTML=myobj.cars[0];
+
