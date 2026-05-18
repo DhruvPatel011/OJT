@@ -10,4 +10,14 @@ amount.addEventListener("focus",()=>{
 amount.value=product.value * qunatity.value;
 });
 
+//PR-2: mouseover and mouseout events
+function changeImage() {
+  document.getElementById("demoImg").src =
+    "../imgs/image.png";
+}
+function restoreImage() {
+  document.getElementById("demoImg").src =
+    "../imgs/image copy.png";
+}
+
 
