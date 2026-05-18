@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AWDP Unit-1 Practical Demo</title>
+    <link rel="stylesheet" href="day1.css" />
+</head>
+<body>
+    <header class="topbar">
+        <div>
+            <p class="eyebrow">Advanced Web Development with PHP</p>
+            <h1>Unit-1 Practical Demo</h1>
+            <p class="subtitle">HTML5 + CSS basics, semantic tags, forms, media, tables, lists, and responsive styling.</p>
+        </div>
+        <nav class="nav">
+            <a href="#html-basics">HTML Basics</a>
+            <a href="#lists-links">Lists & Links</a>
+            <a href="#table-media">Table & Media</a>
+            <a href="#form-validation">Form Validation</a>
+            <a href="#css-demo">CSS Demo</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="card" id="html-basics">
+            <h2>1. HTML5 Basics</h2>
+            <div class="grid-2">
+                <div>
+                    <h3>Headings</h3>
+                    <h1 class="demo-heading">H1 Heading</h1>
+                    <h2 class="demo-heading">H2 Heading</h2>
+                    <h3 class="demo-heading">H3 Heading</h3>
+                    <h4 class="demo-heading">H4 Heading</h4>
+                    <h5 class="demo-heading">H5 Heading</h5>
+                    <h6 class="demo-heading">H6 Heading</h6>
+                </div>
+                <div>
+                    <h3>Paragraph, color and formatting</h3>
+                    <p>
+                        This is a <strong>paragraph</strong> with <em>formatted text</em>, <mark>highlight</mark>,
+                        <small>small text</small>, and <span class="accent">colored text</span>.
+                    </p>
+                    <p class="muted">
+                        HTML5 improves semantic structure, multimedia support, forms, and responsive web development.
+                    </p>
+                    <div class="badge-row">
+                        <span class="badge">semantic tags</span>
+                        <span class="badge">forms</span>
+                        <span class="badge">media</span>
+                        <span class="badge">validation</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="card" id="lists-links">
+            <h2>2. Lists, Anchor Tags and Images</h2>
+            <div class="grid-2">
+                <div>
+                    <h3>Ordered List</h3>
+                    <ol>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>PHP</li>
+                    </ol>
+
+                    <h3>Unordered List</h3>
+                    <ul class="circle-list">
+                        <li>Semantic Elements</li>
+                        <li>Form Validation</li>
+                        <li>Responsive Design</li>
+                        <li>External Stylesheet</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Anchor Tag</h3>
+                    <p>
+                        Visit <a href="https://www.silveroakuni.ac.in" target="_blank" rel="noopener noreferrer">Silver Oak University</a>
+                        or jump to <a href="#form-validation">the form section</a>.
+                    </p>
+
+                    <h3>Image Tag</h3>
+                    <img
+                        class="demo-image"
+                        src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='640' height='360' viewBox='0 0 640 360'><rect width='640' height='360' fill='%23e8f0ff'/><rect x='40' y='40' width='560' height='280' rx='24' fill='%23ffffff'/><circle cx='170' cy='145' r='42' fill='%2390a4ff'/><path d='M120 270c30-55 70-82 110-82s80 27 110 82' fill='none' stroke='%2390a4ff' stroke-width='10' stroke-linecap='round'/><text x='320' y='150' text-anchor='middle' font-family='Arial' font-size='30' fill='%23333'>HTML Image Demo</text><text x='320' y='195' text-anchor='middle' font-family='Arial' font-size='18' fill='%23666'>Replace with your own image path</text></svg>"
+                        alt="Demo image placeholder"
+                    />
+                </div>
+            </div>
+        </section>
+
+        <section class="card" id="table-media">
+            <h2>3. Table, Audio, Video and Iframe</h2>
+
+            <h3>Table</h3>
+            <table class="demo-table">
+                <caption>Student Marks Table</caption>
+                <tr>
+                    <th>Roll No.</th>
+                    <th>Name</th>
+                    <th>HTML</th>
+                    <th>CSS</th>
+                </tr>
+                <tr>
+                    <td>01</td>
+                    <td>Dhruv</td>
+                    <td>85</td>
+                    <td>90</td>
+                </tr>
+                <tr>
+                    <td>02</td>
+                    <td>Priya</td>
+                    <td>78</td>
+                    <td>88</td>
+                </tr>
+                <tr>
+                    <td>03</td>
+                    <td>Rahul</td>
+                    <td>92</td>
+                    <td>95</td>
+                </tr>
+            </table>
+
+            <div class="grid-2 media-grid">
+                <div>
+                    <h3>Audio</h3>
+                    <audio controls>
+                        <source src="test.mp3" type="audio/mpeg" />
+                        Your browser does not support the audio element.
+                    </audio>
+                    <p class="hint">Use your own <code>test.mp3</code> file in the same folder.</p>
+                </div>
+
+                <div>
+                    <h3>Video</h3>
+                    <video controls width="100%">
+                        <source src="test.mp4" type="video/mp4" />
+                        Your browser does not support the video element.
+                    </video>
+                    <p class="hint">Use your own <code>test.mp4</code> file in the same folder.</p>
+                </div>
+            </div>
+
+            <h3>YouTube and Google Map Iframe</h3>
+            <div class="grid-2">
+                <iframe
+                    title="YouTube video player"
+                    src="https://www.youtube.com/embed/ltVi3HpaWWQ"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+
+                <iframe
+                    title="Google Map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670.2186920934587!2d72.53193677449633!3d23.08908891384425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e833af6f39347%3A0xf1db9065daea7008!2sSilver%20Oak%20University!5e0!3m2!1sen!2sin!4v1690107023615!5m2!1sen!2sin"
+                    loading="lazy"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <section class="card" id="form-validation">
+            <h2>4. HTML5 Form Validation</h2>
+            <form class="demo-form" action="#" method="post">
+                <div class="grid-2 form-grid">
+                    <label>
+                        First Name
+                        <input type="text" name="firstName" placeholder="Enter First Name" required maxlength="50" />
+                    </label>
+
+                    <label>
+                        Last Name
+                        <input type="text" name="lastName" placeholder="Enter Last Name" required maxlength="50" />
+                    </label>
+
+                    <label>
+                        Contact No.
+                        <input type="text" name="contact" placeholder="10 digit mobile number" required pattern="\d{10}" maxlength="10" title="Please enter 10 digit mobile number" />
+                    </label>
+
+                    <label>
+                        Email
+                        <input type="email" name="email" placeholder="Enter Your Email ID" required />
+                    </label>
+
+                    <label>
+                        Date of Birth
+                        <input type="date" name="dob" required />
+                    </label>
+
+                    <label>
+                        Age
+                        <input type="number" name="age" placeholder="18 to 40" min="18" max="40" required />
+                    </label>
+
+                    <label>
+                        Gender
+                        <select name="gender" required>
+                            <option value="" selected disabled>Select Gender</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Other</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        City
+                        <select name="city" required>
+                            <option value="" selected disabled>Select City</option>
+                            <option>Ahmedabad</option>
+                            <option>Vadodara</option>
+                            <option>Morbi</option>
+                        </select>
+                    </label>
+
+                    <label class="full">
+                        Address
+                        <textarea name="address" rows="4" placeholder="Enter full address"></textarea>
+                    </label>
+
+                    <label>
+                        Pincode
+                        <input type="text" name="pincode" placeholder="6 digit pincode" pattern="\d{6}" maxlength="6" title="Please enter 6 digit pincode" required />
+                    </label>
+
+                    <label>
+                        Joining Date
+                        <input type="date" name="joiningDate" min="2022-01-01" max="2022-12-31" required />
+                    </label>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit">Submit</button>
+                    <button type="reset" class="secondary">Reset</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="card" id="css-demo">
+            <h2>5. CSS Demo</h2>
+            <div class="grid-2">
+                <div>
+                    <h3>Class Selector</h3>
+                    <p class="css-box class1 class2">
+                        This box uses multiple classes.
+                    </p>
+
+                    <h3>ID Selector</h3>
+                    <p id="special-id" class="css-box">
+                        This box uses one unique id.
+                    </p>
+                </div>
+
+                <div>
+                    <h3>Semantic Layout Example</h3>
+                    <div class="semantic-layout">
+                        <header>Header</header>
+                        <section>Section</section>
+                        <article>Article</article>
+                        <aside>Aside</aside>
+                        <footer>Footer</footer>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
