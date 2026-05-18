@@ -44,4 +44,18 @@ document.write("</tr>");
 document.write("</table>");
 });
 
-//PR-4: 
+//PR-4: Set & Clear (TImeout/Interval) Method
+setTimeout(callme,2000);
+  function callme() {
+    document.getElementById("wrt").innerHTML=("Timeout");
+  }
+t = setTimeout(callme, 3000);
+clearTimeout(t);
+
+setInterval(callmee,2000);
+  function callmee() {
+    document.getElementById("wt").innerHTML=("Interval");
+  }
+te = setInterval(callmee, 3000);
+clearInterval(te);
+
