@@ -407,7 +407,10 @@ body.light .save-btn {
     margin: 0;
     flex-shrink: 0;
   }
+
 }
+
+
 
 .nav-categories {
   display: flex;
@@ -1031,19 +1034,6 @@ body.light .nav-icon-btn {
   color: #0f172a;
 }
 
-/* Mobile */
-@media (max-width: 768px) {
-  nav {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.75rem;
-  }
-
-  .nav-select {
-    min-width: 140px;
-  }
-}
-
 
 
 /* ==========================================
@@ -1113,6 +1103,7 @@ nav {
   color: #6366f1;
   background: rgba(99, 102, 241, 0.08);
 }
+
 
 /* ==========================================
    MODERN CATEGORY DROPDOWN
@@ -1217,21 +1208,7 @@ body.light .nav-icon-btn.active {
   color: #ffffff;
 }
 
-/* ==========================================
-   MOBILE
-   ========================================== */
 
-@media (max-width: 768px) {
-  nav {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.75rem;
-  }
-
-  .nav-select {
-    min-width: 150px;
-  }
-}
 
 /* Add this to the END of css/style.css */
 
@@ -1257,3 +1234,5 @@ body.light .save-btn.saved {
   background: #ef4444 !important;
   color: #ffffff !important;
 }
+
+
