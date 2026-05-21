@@ -10,7 +10,16 @@ function Hello(){
       alert("Clicked")
     }
     function handleInput(){
-        console.log("Value: ", event?.target.value)
+        console.clear();
+        console.log("Value: ", event?.target.value);
+    }
+    const handleMouseOver = () => {
+        console.clear();
+        console.log("Text Over");
+    }
+    const handleDoubleClick = () => {
+        console.clear();
+        console.log("Double Clicked");
     }
 
     return(
@@ -26,6 +35,10 @@ function Hello(){
                 <button onClick={() => alert("Arrow")}>Arrow</button>
             <br /><br />
                 <input type="text" onChange={handleInput} />
+            <br />
+                <input type="text" onClick={()=> alert("arr")} />
+            <br /><br />
+                <p onMouseOver={handleMouseOver} onDoubleClick={handleDoubleClick}>MouseOver & DoubleCLick</p>
             <br />
                 
             </h2>
