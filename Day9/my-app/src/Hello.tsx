@@ -1,3 +1,6 @@
+import { Heading1 } from "lucide-react";
+import './App.css'
+
 function Hello(){
 
     const getname = (yourname) => {
@@ -21,6 +24,20 @@ function Hello(){
         console.clear();
         console.log("Double Clicked");
     }
+    //condition 1
+    const isLoggedIn = false;
+    let message;
+    if(isLoggedIn){
+        message = <h1>Welcome User</h1>
+    }else{
+        message = <h2>Please Login</h2>
+    }
+    //condition 2
+    const mess = false;
+    
+    
+
+
 
     return(
         <>
@@ -40,7 +57,13 @@ function Hello(){
             <br /><br />
                 <p onMouseOver={handleMouseOver} onDoubleClick={handleDoubleClick}>MouseOver & DoubleCLick</p>
             <br />
-                
+                <p>{message}</p>
+                <p>{mess ? <h3>True</h3> : <h3>False</h3>}</p>
+                {mess ? <p className="visible">Visible</p> : <p className="unvisible">Unvisible</p>}
+            <br />
+                <p></p>
+
+            <br /><br />
             </h2>
         </>
     )

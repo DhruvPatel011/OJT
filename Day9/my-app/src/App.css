@@ -3,3 +3,9 @@ body{
   color: white;
 }
 
+.visible{
+  display: block;
+}
+.unvisible{
+  display: block;
+}
