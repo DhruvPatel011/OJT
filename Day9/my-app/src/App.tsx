@@ -14,7 +14,7 @@ import './App.css';
 
 function App() {
 
-
+    const hobbies=["Coding","Traveling","Cooking"]
 /*
   const mess = true;
     if(mess){
@@ -27,8 +27,9 @@ function App() {
   return (
     <>
       <h3 >It's inside <code>App.tsx</code> File... !</h3>
-      <Hello />
+      <Hello name10="dhruv" age={20} city="Ahemdabad" hobbies={hobbies}/>
       <img src={rct} height="200px"  alt="React Img" />
+      <br /><br />
       <Bye />
       <br />
     </>

@@ -1,7 +1,7 @@
 import { Heading1 } from "lucide-react";
 import './App.css'
 
-function Hello(){
+function Hello({name10="dhruv",age=20,city="Ahemdabad",hobbies=["Coding","Traveling","Cooking"]}){
 
     const getname = (yourname) => {
         return yourname;
@@ -61,7 +61,9 @@ function Hello(){
                 <p>{mess ? <h3>True</h3> : <h3>False</h3>}</p>
                 {mess ? <p className="visible">Visible</p> : <p className="unvisible">Unvisible</p>}
             <br />
-                <p></p>
+                <p>Hobbies: {hobbies.join(", ")}</p>
+                <p>City: {city}</p>
+                <p>Age: {age}</p>
 
             <br /><br />
             </h2>
